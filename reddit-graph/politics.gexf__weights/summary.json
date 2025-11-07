@@ -1,0 +1,16 @@
+{
+  "num_edges_read": 10553,
+  "num_with_weight_or_fallback": 10553,
+  "num_missing_skipped": 0,
+  "min": -1.0,
+  "max": 1.0,
+  "mean": 0.387657538140813,
+  "median": 0.75,
+  "std": 0.6024569152429445,
+  "count_neg": 1712,
+  "count_zero": 652,
+  "count_pos": 8189,
+  "count_below_-1": 0,
+  "count_above_1": 0,
+  "count_in_range": 10553
+}

@@ -1,0 +1,19 @@
+{
+  "directed": true,
+  "n_vertices_directed": 6287,
+  "n_arestas_directed": 9530,
+  "grau_medio_total_directed": 3.031652616510259,
+  "grau_medio_in_directed": 1.5158263082551295,
+  "grau_medio_out_directed": 1.5158263082551295,
+  "densidade_directed": 0.00024114322434857295,
+  "n_vertices_undirected": 6287,
+  "n_arestas_undirected": 8382,
+  "grau_medio_undirected": 2.6664545888341022,
+  "densidade_undirected": 0.0004241894032507321,
+  "clusterizacao_global_transitivity": 0.011128137769994162,
+  "clusterizacao_media_local": 0.021331994777141143,
+  "n_componentes_undirected": 1,
+  "tamanho_maior_componente": 6287,
+  "distancia_media_maior_componente": 6.396173242125358,
+  "diametro_maior_componente": 16
+}
