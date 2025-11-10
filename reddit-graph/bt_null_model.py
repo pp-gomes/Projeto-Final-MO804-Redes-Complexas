@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-bt_null_model.py — Modelo nulo de BT/|BT| por randomização de pesos (APENAS .gexf).
-Cria pasta de saída automaticamente (default: <stem>.gexf__null).
-
-Modos de embaralhamento:
-- global      : embaralha todos os pesos globalmente.
-- per_source  : embaralha apenas entre arestas SAINDO do mesmo nó.
-- signs_only  : mantém magnitudes e embaralha só os sinais.
-"""
-
 import math, argparse, random
 from itertools import combinations
 from pathlib import Path
@@ -273,3 +261,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
