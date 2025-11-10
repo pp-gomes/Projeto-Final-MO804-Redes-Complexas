@@ -275,12 +275,3 @@ python edge_weight_hist.py --gexf ./data/politics.gexf --step 0.1
 
 * Licença: defina a licença em `LICENSE` (sugestão: MIT ou BSD-3-Clause).
 * Se este trabalho for utilizado em publicações, citar como:
-
-  > Gomes do Carmo, P.P. (2025). *Projeto Final — MO804 Redes Complexas: Equilíbrio estrutural em redes com sinais (Reddit r/politics).* Repositório GitHub: [https://github.com/pp-gomes/Projeto-Final-MO804-Redes-Complexas](https://github.com/pp-gomes/Projeto-Final-MO804-Redes-Complexas)
-
----
-
-**Contato:** Pedro Paulo Gomes do Carmo
-**Repositório:** [https://github.com/pp-gomes/Projeto-Final-MO804-Redes-Complexas](https://github.com/pp-gomes/Projeto-Final-MO804-Redes-Complexas)
-
----
