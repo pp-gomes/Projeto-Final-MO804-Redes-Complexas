@@ -1,19 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-bt_compare_plots.py — Comparativos (observado vs nulo) USANDO APENAS o contexto 'gexf'.
-
-Ele lê os CSVs produzidos por bt_null_model.py (na pasta <stem>.gexf__null por padrão):
-  gexf_triads_observed.csv
-  gexf_null_hist_absBT.csv
-  gexf_null_hist_BT.csv
-  gexf_null_summary_vs_observed.csv
-
-Cria uma pasta de saída automaticamente (default: <stem>.gexf__compare) e salva:
-  - gexf_compare_absBT.png, gexf_compare_BT.png
-  - gexf_compare_mean_absBT.png, gexf_compare_pctforte_bal.png, gexf_compare_pctforte_desbal.png, etc.
-"""
-
 import argparse
 from pathlib import Path
 import numpy as np
@@ -116,3 +100,4 @@ def main():
 if __name__ == "__main__":
     import numpy as np
     main()
+
