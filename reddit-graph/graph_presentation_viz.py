@@ -1,30 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-graph_presentation_viz.py — Visualização clara (estática + interativa) para apresentação de grafos .gexf
-
-Mudanças pedidas:
-  - Sem nomes/rótulos de nós (nem de arestas);
-  - Arestas coloridas por sinal do peso: verde (w>0), vermelho (w<0), cinza-escuro (w=0);
-  - Legenda explicando as cores das arestas (estático e interativo).
-
-Saídas (em <stem>.gexf__viz/ por padrão):
-  - viz_presentation.png / viz_presentation.svg         # figura estática
-  - viz_presentation.html                                # figura interativa (Plotly), se disponível
-  - node_metrics.csv (id, degree, community, x, y)      # métrica & layout por nó
-  - edge_metrics.csv (source, target, weight)           # arestas finais
-  - README_viz.txt                                       # parâmetros usados
-
-Uso (exemplos):
-  python graph_presentation_viz.py --gexf "./politics.gexf" --keep-gcc --interactive both
-  python graph_presentation_viz.py --gexf "./politics.gexf" --keep-gcc --min-weight 0.2 --max-nodes 2000
-
-Dependências:
-  pip install networkx pandas numpy matplotlib
-  (opcional, para HTML interativo) pip install plotly
-  (opcional, melhor comunidades)   pip install python-louvain
-"""
-
 import argparse
 from pathlib import Path
 from typing import Dict, Tuple, Iterable, List, Optional
@@ -492,3 +465,4 @@ Notas:
 
 if __name__ == "__main__":
     main()
+
