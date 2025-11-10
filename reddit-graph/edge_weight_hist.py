@@ -1,23 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-edge_weight_hist.py — Histograma de pesos de arestas no intervalo [-1, 1]
-
-Saídas (em <stem>.gexf__weights/ por padrão):
-  - weights.csv           # (source, target, key?, weight) para cada aresta lida
-  - weight_hist.csv       # contagens por bin em [-1,1]
-  - weight_hist.png       # histograma (barras)
-  - summary.json          # resumo com min/max/mean/median/std e contagens (neg/zero/pos/fora do range)
-
-Uso:
-  python edge_weight_hist.py --gexf ./politics.gexf
-Opções:
-  --step 0.1          # tamanho do bin (default=0.1 → 21 bins)
-  --bins 40           # alternativa: nº de bins (ignora --step)
-  --outdir auto       # pasta de saída (default: <stem>.gexf__weights)
-  --fallback score    # fallback p/ peso ausente: score (tanh(score/10)), unit (=1.0), skip (=descarta), zero (=0.0)
-"""
-
 import argparse
 from pathlib import Path
 import json
@@ -199,3 +179,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
