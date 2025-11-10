@@ -16,9 +16,9 @@ class RedditGraphExtractor:
         Initialize Reddit API client and an empty directed multigraph.
         """
         self.reddit = praw.Reddit(
-            client_id="Oc3-NZkgYZPJwsUlUNBufQ",
-            client_secret="H0GCmuJ1gS46COMDQznna3j354I8bw",
-            user_agent=u"meu_graph:v1.0 (by u/ppgomes)"
+            client_id=client_id,
+            client_secret=client_secret,
+            user_agent=user_agent
         )
         self.graph = nx.MultiDiGraph()
     
@@ -160,3 +160,4 @@ if __name__ == "__main__":
             messages = Separator(MergedGraph.merged_graph)
             messages.separate()
             messages.dump(folder_path)
+
