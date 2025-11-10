@@ -1,32 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-graph_basic_stats.py — Estatísticas básicas e distribuições a partir de um arquivo .gexf
-
-O script:
-1) Lê um .gexf (suporta Graph/DiGraph e Multi*).
-2) Constrói também a versão não-direcionada simples (sem paralelas nem laços) para métricas que exigem conectividade.
-3) Calcula e salva:
-   - Nº de vértices e arestas; grau médio (total / in / out);
-   - Coeficiente de clusterização GLOBAL (transitivity) + média de clusterização local;
-   - Coeficiente de clusterização por nó + histograma (PNG);
-   - Distância média (na maior componente do não-direcionado);
-   - Diâmetro (exato para grafos até certo tamanho; senão, aproximação);
-   - Densidade;
-   - Distribuição de graus (bar chart, PNG);
-   - Nº de componentes no não-direcionado + (se >1) distribuição dos tamanhos (PNG).
-4) Salva CSVs/JSON e PNGs numa pasta de saída.
-
-Uso:
-  python graph_basic_stats.py --gexf "./politics.gexf"
-Parâmetros úteis:
-  --outdir auto         # pasta de saída (default: <stem>.gexf__basics)
-  --bins 50             # bins dos histogramas (clusterização)
-  --max-exact 5000      # no. máx de nós para cálculos exatos de distância/diâmetro
-  --spl-samples 200     # nº de amostras para estimar distância média se o grafo for grande
-  --seed 42             # semente para amostragem
-"""
-
 import argparse
 from collections import Counter
 from pathlib import Path
@@ -364,3 +335,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
